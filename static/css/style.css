@@ -1,0 +1,109 @@
+body{
+    font-family: Arial, sans-serif;
+    background:white;
+}
+
+/* Navbar */
+
+.custom-navbar{
+    background:#006B3C;
+}
+
+/* Hero Section */
+
+.hero{
+    padding:80px 0;
+    background:#f8f9fa;
+}
+
+.hero h1{
+    color:#006B3C;
+    font-size:55px;
+    font-weight:bold;
+}
+
+.hero h3{
+    margin-top:15px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+/* Statistics */
+
+.stats{
+    padding:60px 0;
+}
+
+.stats h2{
+    color:#006B3C;
+    font-size:45px;
+    font-weight:bold;
+}
+
+/* Cards */
+
+.card{
+    border:none;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* Footer */
+
+.footer{
+    background:#006B3C;
+    color:white;
+    padding:40px 0;
+    margin-top:50px;
+}
+
+.footer h4{
+    font-weight:bold;
+}
+
+.footer p{
+    margin-bottom:8px;
+}
+
+/* WhatsApp Floating Button */
+
+.whatsapp-float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    text-align:center;
+    font-size:28px;
+    line-height:60px;
+    text-decoration:none;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+    z-index:999;
+}
+
+.whatsapp-float:hover{
+    color:white;
+    transform:scale(1.1);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero{
+        text-align:center;
+    }
+
+}

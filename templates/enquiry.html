@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container py-5">
+
+    <h1 class="text-center text-success">
+        Student Enquiry Form
+    </h1>
+
+    <hr>
+
+    <form method="POST">
+
+        <div class="mb-3">
+            <label>Student Name</label>
+            <input type="text"
+                   name="student_name"
+                   class="form-control"
+                   required>
+        </div>
+
+        <div class="mb-3">
+            <label>Phone Number</label>
+            <input type="text"
+                   name="phone"
+                   class="form-control"
+                   required>
+        </div>
+
+        <div class="mb-3">
+            <label>Class</label>
+            <input type="text"
+                   name="class_name"
+                   class="form-control"
+                   required>
+        </div>
+
+        <div class="mb-3">
+            <label>Course</label>
+            <input type="text"
+                   name="course"
+                   class="form-control"
+                   required>
+        </div>
+
+        <div class="mb-3">
+            <label>Message</label>
+            <textarea name="message"
+                      class="form-control"
+                      rows="4"></textarea>
+        </div>
+
+        <button type="submit"
+                class="btn btn-success">
+            Submit Enquiry
+        </button>
+
+    </form>
+
+</div>
+
+{% endblock %}
