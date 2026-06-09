@@ -1,39 +1,58 @@
 body{
-    font-family: Arial, sans-serif;
-    background:white;
+    font-family:'Poppins',sans-serif;
+    background:#ffffff;
 }
 
-/* Navbar */
+/* NAVBAR */
 
 .custom-navbar{
     background:#006B3C;
 }
 
-/* Hero Section */
+.navbar-brand{
+    font-size:24px;
+}
+
+.nav-link{
+    color:white !important;
+    font-weight:500;
+}
+
+.nav-link:hover{
+    color:#ffd700 !important;
+}
+
+/* HERO */
 
 .hero{
     padding:80px 0;
-    background:#f8f9fa;
+    background:linear-gradient(to right,#f8f9fa,#e8f5e9);
 }
 
 .hero h1{
-    color:#006B3C;
     font-size:55px;
-    font-weight:bold;
+    font-weight:700;
+    color:#006B3C;
 }
 
 .hero h3{
     margin-top:15px;
+    color:#333;
 }
 
 .hero p{
-    font-size:20px;
+    font-size:18px;
 }
 
-/* Statistics */
+.hero img{
+    max-height:450px;
+}
+
+/* STATS */
 
 .stats{
     padding:60px 0;
+    background:#ffffff;
 }
 
 .stats h2{
@@ -42,68 +61,86 @@ body{
     font-weight:bold;
 }
 
-/* Cards */
+/* CARDS */
 
-.card{
+.feature-card,
+.course-card,
+.testimonial-card{
     border:none;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
     transition:0.3s;
+    margin-bottom:25px;
 }
 
-.card:hover{
-    transform:translateY(-5px);
+.feature-card:hover,
+.course-card:hover,
+.testimonial-card:hover{
+    transform:translateY(-8px);
 }
 
-/* Footer */
+.feature-card{
+    padding:20px;
+}
 
-.footer{
+.course-card{
+    padding:20px;
+}
+
+.testimonial-card{
+    padding:15px;
+}
+
+/* CTA */
+
+.cta-section{
     background:#006B3C;
     color:white;
-    padding:40px 0;
-    margin-top:50px;
+    padding:80px 0;
 }
 
-.footer h4{
+.cta-section h2{
+    font-size:40px;
     font-weight:bold;
 }
 
-.footer p{
-    margin-bottom:8px;
-}
+/* FOOTER */
 
-/* WhatsApp Floating Button */
-
-.whatsapp-float{
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:20px;
-    right:20px;
-    background:#25D366;
+.footer-section{
+    background:#111;
     color:white;
-    border-radius:50%;
     text-align:center;
-    font-size:28px;
-    line-height:60px;
-    text-decoration:none;
-    box-shadow:0 4px 10px rgba(0,0,0,0.3);
-    z-index:999;
+    padding:40px 0;
 }
 
-.whatsapp-float:hover{
-    color:white;
-    transform:scale(1.1);
+.footer-section hr{
+    background:white;
 }
 
-/* Responsive */
+/* BUTTONS */
+
+.btn-success{
+    background:#006B3C;
+    border:none;
+}
+
+.btn-success:hover{
+    background:#004f2d;
+}
+
+/* RESPONSIVE */
 
 @media(max-width:768px){
-
-    .hero h1{
-        font-size:38px;
-    }
 
     .hero{
         text-align:center;
     }
 
+    .hero h1{
+        font-size:38px;
+    }
+
+    .stats h2{
+        font-size:32px;
+    }
 }

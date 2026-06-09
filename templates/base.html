@@ -10,28 +10,26 @@
 
     <link rel="stylesheet"
           href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
-
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm custom-navbar">
     <div class="container">
 
-        <a class="navbar-brand fw-bold"
-           href="/">
-
-            Students Success Tuition Centre
-
+        <a class="navbar-brand fw-bold" href="/">
+            🎓 Students Success Tuition
         </a>
 
         <button class="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarNav">
-
             <span class="navbar-toggler-icon"></span>
-
         </button>
 
         <div class="collapse navbar-collapse"
@@ -68,35 +66,41 @@
         </div>
 
     </div>
-
 </nav>
 
 {% block content %}
 {% endblock %}
 
-<footer class="bg-success text-white text-center py-4 mt-5">
+<footer class="footer-section">
 
-    <h3>Students Success Tuition Centre</h3>
+    <div class="container">
 
-    <p class="mb-1">
-        Learn Today, Lead Tomorrow
-    </p>
+        <h3>Students Success Tuition Centre</h3>
 
-    <p class="mb-1">
-        📍 Thiruvottiyur, Chennai |
-        📞 8056078499
-    </p>
+        <p>
+            Learn Today • Lead Tomorrow
+        </p>
 
-    <p class="mb-0">
-        Evening Classes: 6:00 PM - 8:30 PM
-    </p>
+        <p>
+            📍 Thiruvottiyur, Chennai
+        </p>
 
-    <hr class="bg-light">
+        <p>
+            📞 8056078499
+        </p>
 
-    <p>
-        © 2026 Students Success Tuition Centre.
-        All Rights Reserved.
-    </p>
+        <p>
+            Evening Classes: 6:00 PM – 8:30 PM
+        </p>
+
+        <hr>
+
+        <p>
+            © 2026 Students Success Tuition Centre.
+            All Rights Reserved.
+        </p>
+
+    </div>
 
 </footer>
 
