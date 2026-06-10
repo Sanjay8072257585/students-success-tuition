@@ -10,6 +10,24 @@
 
     <hr>
 
+    {% if success %}
+
+    <div class="alert alert-success mb-4">
+
+        <h4>✅ Thank You!</h4>
+
+        <p>
+            Your enquiry has been submitted successfully.
+        </p>
+
+        <p>
+            We will contact you soon.
+        </p>
+
+    </div>
+
+    {% endif %}
+
     <form method="POST">
 
         <div class="mb-3">
