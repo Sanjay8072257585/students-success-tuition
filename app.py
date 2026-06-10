@@ -58,12 +58,16 @@ def contact():
 @app.route("/enquiry", methods=["GET", "POST"])
 def enquiry():
 
+    success = False
+
     if request.method == "POST":
 
         new_enquiry = Enquiry(
             student_name=request.form["student_name"],
+            parent_name=request.form["parent_name"],
             phone=request.form["phone"],
             class_name=request.form["class_name"],
+            school_name=request.form["school_name"],
             course=request.form["course"],
             message=request.form["message"]
         )
@@ -71,14 +75,11 @@ def enquiry():
         db.session.add(new_enquiry)
         db.session.commit()
 
-        return render_template(
-            "enquiry.html",
-            success=True
-        )
+        success = True
 
     return render_template(
         "enquiry.html",
-        success=False
+        success=success
     )
 
 
@@ -175,8 +176,10 @@ def download_excel():
         data.append({
             "ID": enquiry.id,
             "Student Name": enquiry.student_name,
+            "Parent Name": enquiry.parent_name,
             "Phone": enquiry.phone,
             "Class": enquiry.class_name,
+            "School Name": enquiry.school_name,
             "Course": enquiry.course,
             "Message": enquiry.message
         })

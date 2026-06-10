@@ -28,8 +28,6 @@
 
     <hr>
 
-    <!-- Dashboard Cards -->
-
     <div class="row text-center mb-4">
 
         <div class="col-md-4 mb-3">
@@ -67,8 +65,6 @@
 
     </div>
 
-    <!-- Search -->
-
     <form method="GET" action="{{ url_for('admin') }}" class="mb-4">
 
         <div class="input-group">
@@ -91,54 +87,62 @@
         Student Enquiries
     </h3>
 
-    <table class="table table-bordered table-striped">
+    <div class="table-responsive">
 
-        <thead class="table-success">
+        <table class="table table-bordered table-striped">
 
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Phone</th>
-                <th>Class</th>
-                <th>Course</th>
-                <th>Message</th>
-                <th>Action</th>
-            </tr>
+            <thead class="table-success">
 
-        </thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Student Name</th>
+                    <th>Parent Name</th>
+                    <th>Phone</th>
+                    <th>Class</th>
+                    <th>School</th>
+                    <th>Course</th>
+                    <th>Message</th>
+                    <th>Action</th>
+                </tr>
 
-        <tbody>
+            </thead>
 
-            {% for enquiry in enquiries %}
+            <tbody>
 
-            <tr>
+                {% for enquiry in enquiries %}
 
-                <td>{{ enquiry.id }}</td>
-                <td>{{ enquiry.student_name }}</td>
-                <td>{{ enquiry.phone }}</td>
-                <td>{{ enquiry.class_name }}</td>
-                <td>{{ enquiry.course }}</td>
-                <td>{{ enquiry.message }}</td>
+                <tr>
 
-                <td>
+                    <td>{{ enquiry.id }}</td>
+                    <td>{{ enquiry.student_name }}</td>
+                    <td>{{ enquiry.parent_name }}</td>
+                    <td>{{ enquiry.phone }}</td>
+                    <td>{{ enquiry.class_name }}</td>
+                    <td>{{ enquiry.school_name }}</td>
+                    <td>{{ enquiry.course }}</td>
+                    <td>{{ enquiry.message }}</td>
 
-                    <a href="{{ url_for('delete_enquiry', id=enquiry.id) }}"
-                       class="btn btn-danger btn-sm"
-                       onclick="return confirm('Delete this enquiry?')">
+                    <td>
 
-                        Delete
+                        <a href="{{ url_for('delete_enquiry', id=enquiry.id) }}"
+                           class="btn btn-danger btn-sm"
+                           onclick="return confirm('Delete this enquiry?')">
 
-                    </a>
+                            Delete
 
-                </td>
+                        </a>
 
-            </tr>
+                    </td>
 
-            {% endfor %}
+                </tr>
 
-        </tbody>
+                {% endfor %}
 
-    </table>
+            </tbody>
+
+        </table>
+
+    </div>
 
 </div>
 
