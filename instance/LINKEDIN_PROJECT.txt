@@ -1,0 +1,14 @@
+Students Success Tuition Centre Management System
+
+Developed a full-stack web application for a tuition centre using Python Flask, HTML, CSS, Bootstrap, and SQLite. The system allows students to submit enquiries online and enables administrators to manage records through a secure dashboard.
+
+Key achievements:
+• Designed responsive and professional user interface
+• Built student enquiry management system
+• Implemented admin login and dashboard
+• Added Excel export functionality for enquiry reports
+• Integrated Google Maps and WhatsApp contact support
+• Deployed the application on Render
+• Created and optimized Google Business Profile
+
+Technologies: Python, Flask, HTML, CSS, Bootstrap, SQLite, GitHub, Render
