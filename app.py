@@ -71,9 +71,15 @@ def enquiry():
         db.session.add(new_enquiry)
         db.session.commit()
 
-        return redirect(url_for("home"))
+        return render_template(
+            "enquiry.html",
+            success=True
+        )
 
-    return render_template("enquiry.html")
+    return render_template(
+        "enquiry.html",
+        success=False
+    )
 
 
 # =========================
