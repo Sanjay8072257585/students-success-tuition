@@ -187,6 +187,7 @@ def download_excel():
     df = pd.DataFrame(data)
 
     file_name = "enquiries.xlsx"
+    print(df)
 
     df.to_excel(file_name, index=False)
 
