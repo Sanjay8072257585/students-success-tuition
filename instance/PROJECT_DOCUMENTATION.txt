@@ -1,0 +1,37 @@
+PROJECT TITLE
+Students Success Tuition Centre Management System
+
+PROJECT OBJECTIVE
+Developed a web-based tuition management system to manage student enquiries, courses, contact information, and administration activities efficiently.
+
+TECHNOLOGIES USED
+- Python
+- Flask
+- HTML
+- CSS
+- Bootstrap
+- SQLite
+- GitHub
+- Render
+
+FEATURES
+- Student Enquiry Form
+- Admin Login System
+- Admin Dashboard
+- Excel Export Functionality
+- Contact Page
+- Courses Page
+- Database Integration
+- Responsive Design
+- WhatsApp Contact Button
+- Google Maps Integration
+
+DEPLOYMENT
+- Hosted on Render
+- Source Code Managed Using GitHub
+
+LIVE WEBSITE
+https://students-success-tuition.onrender.com
+
+DEVELOPER
+Sanjay U 
