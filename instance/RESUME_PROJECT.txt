@@ -1,0 +1,18 @@
+PROJECT NAME:
+Students Success Tuition Centre Management System
+
+DESCRIPTION:
+Developed a full-stack web application for managing student enquiries and tuition centre information. Implemented admin dashboard functionality, enquiry management, database integration, Excel export, and responsive user interface. Deployed the application online using Render and integrated Google Business Profile for improved online visibility.
+
+TECHNOLOGIES:
+Python, Flask, HTML, CSS, Bootstrap, SQLite, GitHub, Render
+
+KEY FEATURES:
+• Student Enquiry Management
+• Admin Dashboard
+• Excel Report Export
+• Database Integration
+• Responsive Design
+• Google Maps Integration
+• WhatsApp Contact Support
+• Live Deployment
